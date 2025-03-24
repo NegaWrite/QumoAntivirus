@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qumo Antivirus - Защита нового поколения</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Навигация */
+        nav {
+            background: #1a1a1a;
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 2rem;
+        }
+
+        /* Герой секция */
+        .hero {
+            background: linear-gradient(45deg, #2c3e50, #3498db);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background: #e74c3c;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #c0392b;
+        }
+
+        /* Особенности */
+        .features {
+            padding: 5rem 5%;
+            background: #f9f9f9;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        /* Цены */
+        .pricing {
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .pricing-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .price-card {
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        /* Футер */
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav>
+        <div class="logo">Qumo Antivirus</div>
+        <div class="nav-links">
+            <a href="#features">Возможности</a>
+            <a href="#pricing">Цены</a>
+            <a href="#download">Скачать</a>
+            <a href="#support">Поддержка</a>
+        </div>
+    </nav>
+
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Защита нового поколения</h1>
+            <p>Мощный антивирус с искусственным интеллектом для полной защиты ваших устройств</p>
+            <button class="cta-button">Попробовать бесплатно</button>
+        </div>
+    </section>
+
+    <!-- Особенности -->
+    <section class="features" id="features">
+        <h2>Наши возможности</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Защита в реальном времени</h3>
+                <p>Круглосуточный мониторинг системы и блокировка угроз</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-fire"></i>
+                <h3>Умный файрвол</h3>
+                <p>Продвинутая защита сетевых соединений</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bug"></i>
+                <h3>Удаление вредоносных программ</h3>
+                <p>Глубокая проверка системы на наличие угроз</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Цены -->
+    <section class="pricing" id="pricing">
+        <h2>Тарифные планы</h2>
+        <div class="pricing-cards">
+            <div class="price-card">
+                <h3>Базовый</h3>
+                <p class="price">$29.99/год</p>
+                <ul>
+                    <li>Защита 1 устройства</li>
+                    <li>Базовая защита</li>
+                    <li>24/7 Поддержка</li>
+                </ul>
+                <button class="cta-button">Купить сейчас</button>
+            </div>
+            <div class="price-card">
+                <h3>Премиум</h3>
+                <p class="price">$49.99/год</p>
+                <ul>
+                    <li>Защита до 5 устройств</li>
+                    <li>Расширенные функции</li>
+                    <li>VPN включен</li>
+                </ul>
+                <button class="cta-button">Купить сейчас</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <p>© 2023 Qumo Antivirus. Все права защищены.</p>
+        <div class="footer-links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия использования</a>
+        </div>
+    </footer>
+
+    <script>
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
